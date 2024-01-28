@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs24 \cf0 \
+Jan 19, 2024\
+- resistance calculations done, followed Lab 1 procedure\
+\
+Jan 20, 2024\
+- trying some possible circuit layouts on the breadboard. \
+- the blue and red LEDs turn on/off at the same time \'97 try pairing them on the breadboard?\
+- wrote code to achieve the required 3-state toggle system. very straightforward. used a \'93pressed\'94 variable to ensure that states change only when button is initially pressed (and not when button is held down, released, etc.). linked blue and red LEDs to the same GPIO pin.\
+- putting the blue and red LEDs in series together with a 220 ohm resistor didn\'92t work (the blue LED lit up, but not the red). this could be because the resistance used was too high to reach the minimum current requirement for red (~3mA). since 220 ohms is the lowest resistance provided, it\'92ll be better to put all 3 LEDs separate with their own resistor.\
+- rewrote code using 3 GPIO pins for LEDs, to reflect the new circuit layout. circuit is working!\
+- sent pics of circuit layout to Elorie so that she can start the CAD.\
+\
+Jan 24, 2024\
+- in myfab. replaced jumper wires with actual wires. had to be careful with wire length so that they lay flat on the breadboard. \
+- used black wires for ground, red for everything else\
+- moved button closer to Pico to match up with button presser positioning on lasercut box.\
+- circuit done!\
+\
+}
